@@ -20,6 +20,10 @@ public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
 
+    @Override
+    public boolean isUserRegistered(String mobile) {
+        return userRepository.findByMobile(mobile).isPresent();
+    }
 
     @Override
     @Transactional
@@ -29,7 +33,7 @@ public class UserServiceImpl implements UserService {
             User user = User.builder()
                     .username(username)
                     .password(passwordEncoder.encode(password))
-                    .role(Role.OWNER)
+                    .role(Role.CUSTOMER)
                     .isDeleted(false)
                     .build();
             return userRepository.save(user);

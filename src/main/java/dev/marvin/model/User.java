@@ -24,7 +24,7 @@ public class User implements UserDetails {
     private Integer id;
     @Column(unique = true)
 
-    private String username;
+    private String mobile;
 
     private String password;
 
@@ -40,7 +40,7 @@ public class User implements UserDetails {
 
     @Override
     public String getUsername() {
-        return username;
+        return mobile;
     }
 
     @Override
