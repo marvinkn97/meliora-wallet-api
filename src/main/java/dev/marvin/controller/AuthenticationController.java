@@ -1,9 +1,6 @@
 package dev.marvin.controller;
 
-import dev.marvin.dto.AuthenticationRequest;
-import dev.marvin.dto.AuthenticationResponse;
-import dev.marvin.dto.PreAuthRequest;
-import dev.marvin.dto.ResponseDto;
+import dev.marvin.dto.*;
 import dev.marvin.service.UserService;
 import dev.marvin.util.JwtUtils;
 import io.swagger.v3.oas.annotations.Operation;

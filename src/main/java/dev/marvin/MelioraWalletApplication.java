@@ -1,6 +1,5 @@
 package dev.marvin;
 
-import dev.marvin.dto.SMSRequest;
 import dev.marvin.dto.SMSResponse;
 import dev.marvin.service.SmsService;
 import org.springframework.boot.CommandLineRunner;

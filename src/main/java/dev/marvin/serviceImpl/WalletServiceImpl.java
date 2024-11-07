@@ -1,7 +1,6 @@
 package dev.marvin.serviceImpl;
 
 import dev.marvin.dto.RegistrationRequest;
-import dev.marvin.dto.SMSRequest;
 import dev.marvin.dto.WalletResponse;
 import dev.marvin.exception.DuplicateResourceException;
 import dev.marvin.exception.ResourceNotFoundException;

@@ -1,15 +1,15 @@
 package dev.marvin.utils;
 
 import dev.marvin.domain.OTP;
-import dev.marvin.dto.PreAuthRequest;
 import dev.marvin.dto.OtpVerificationRequest;
+import dev.marvin.dto.PreAuthRequest;
 import dev.marvin.dto.SmsRequest;
 import dev.marvin.exception.RequestValidationException;
-import dev.marvin.exception.ServiceException;
 import dev.marvin.repository.OtpRepository;
 import dev.marvin.service.SmsService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.hibernate.service.spi.ServiceException;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;

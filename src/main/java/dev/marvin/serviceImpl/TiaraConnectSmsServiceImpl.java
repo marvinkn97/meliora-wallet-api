@@ -1,6 +1,5 @@
 package dev.marvin.serviceImpl;
 
-import dev.marvin.dto.SMSRequest;
 import dev.marvin.dto.SMSResponse;
 import dev.marvin.service.SmsService;
 import org.slf4j.Logger;
